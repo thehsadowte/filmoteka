@@ -1,2 +1,21 @@
+@import './utils/variables';
+@import './utils/breakpoints';
+@import './utils/mixin';
+@import './utils/mixins';
 @import './common';
-@import './example';
+@import './container';
+@import './layout/headerMainPage';
+@import './layout/headerMyLibrary';
+@import './layout/containerMainPage';
+@import './layout/movieСardTemplate';
+@import './layout/pagination';
+@import './layout/containerMyLibrary';
+// @import './layout/loaderSpinner';
+@import './layout/modal';
+@import './layout/footer';
+@import './layout/modal-team';
+@import './layout/toTop';
+@import './layout/modal-login';
+@import './layout/theme';
+
+// @import './example';

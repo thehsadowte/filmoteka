@@ -1,0 +1,58 @@
+<div class="container header-container__main">
+  <nav class="header-nav header-nav__main">
+    <a class="logo" href="/src/index.html">
+      <img class="logo__img" src="./images/logo/film.png" alt="logo" />
+      <span class="logo__title">Filmoteka</span>
+    </a>
+    <ul class="header-nav__list">
+      <li class="header-nav__item">
+        <a class="header-nav__link current" href="/src/index.html">Home</a>
+      </li>
+      <li class="header-nav__item">
+        <a class="header-nav__link js-link-library" href="/src/library.html"
+          >My Library</a
+        >
+      </li>
+      <li class="header-list__item">
+        <button class="darktheme__button toggle-darktheme-btn" />🌙
+      </li>
+      <li class="header-list__item" data-login-item>
+        <button
+          id="login"
+          class="header-list__button login__btn lng-loginbutton"
+          type="button"
+          data-modal-open
+          data-login
+        >
+          Log In
+        </button>
+      </li>
+      <li class="header-list__item visually-hidden" data-logout-item>
+        <button
+          id="logout"
+          class="header-list__button logout__btn lng-logout"
+          type="button"
+          data-logout
+        >
+          Log Out
+        </button>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="form__wrap">
+    <form id="search-form" action="" class="search js-search-form">
+      <input
+        name="searchQuery"
+        class="search__input"
+        type="text"
+        placeholder="Movie search"
+      />
+      <button class="search__button" type="submit" title="Search">
+        <svg class="search__button-icon icon-search" width="12" height="12">
+          <use href=".//images/icons.svg#icon-search"></use>
+        </svg>
+      </button>
+    </form>
+  </div>
+</div>
