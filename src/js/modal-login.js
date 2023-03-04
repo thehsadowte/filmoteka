@@ -28,6 +28,8 @@ function closeModal(event) {
   event.preventDefault();
 
   modal.classList.add('is-hidden');
+  document.removeEventListener('keydown', closeOnEsc);
+  document.removeEventListener('click', closeOnBackdrop);
 }
 
 function closeOnEsc(event) {
