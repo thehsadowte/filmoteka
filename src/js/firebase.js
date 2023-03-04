@@ -25,7 +25,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
-auth.languageCode = lang;
+// auth.languageCode = lang;
 
 const authBtn = document.querySelector('[data-modal-google-auth]');
 const logOutBtn = document.querySelector('[data-logout]');
@@ -37,18 +37,19 @@ const passwordInput = document.querySelector('#password');
 window.addEventListener('load', onLoadCheckStat);
 
 function onLoadCheckStat() {
-  const libraryItem = document.querySelector('[data-library-item]');
+  // const libraryItem = document.querySelector('[data-library-item]');
+  // console.log(libraryItem);
   const logOutItem = document.querySelector('[data-logout-item');
   const logInItem = document.querySelector('[data-login-item');
 
   if (localStorage.getItem('actions')) {
     logInItem.classList.add('visually-hidden');
-    libraryItem.classList.remove('visually-hidden');
+    // libraryItem.classList.remove('visually-hidden');
     logOutItem.classList.remove('visually-hidden');
     logOutBtn.addEventListener('click', googleAuthHandler);
     logOutBtn.addEventListener('click', logout);
   } else {
-    libraryItem.classList.add('visually-hidden');
+    // libraryItem.classList.add('visually-hidden');
     logOutItem.classList.add('visually-hidden');
     authBtn.addEventListener('click', googleAuthHandler);
     singUpBtn.addEventListener('click', createAccount);
